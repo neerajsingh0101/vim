@@ -37,3 +37,7 @@ set hlsearch
 " then search will be case sentitive
 set smartcase
 
+
+"turn on syntax highlighting
+syntax on
+
