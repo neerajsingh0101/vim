@@ -30,3 +30,6 @@ set incsearch
 " Show matching brackets, flashes matching brackets or parentheses
 set showmatch
 
+" Highlight all matches in a search
+set hlsearch
+
