@@ -10,7 +10,7 @@ set shiftwidth=2
 set autoindent
 set expandtab
 
-set noswapfile # Do not create swap file
+set noswapfile " Do not create swap file
 
 " Color scheme
 colorscheme vividchalk
