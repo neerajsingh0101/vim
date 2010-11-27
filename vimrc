@@ -33,3 +33,7 @@ set showmatch
 " Highlight all matches in a search
 set hlsearch
 
+" Ignore case when searching lowercase. if search term has any uppercase letter
+" then search will be case sentitive
+set smartcase
+
