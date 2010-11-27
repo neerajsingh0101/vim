@@ -10,6 +10,8 @@ set shiftwidth=2
 set autoindent
 set expandtab
 
+set noswapfile # Do not create swap file
+
 " Color scheme
 colorscheme vividchalk
 highlight NonText guibg=#060606
