@@ -41,3 +41,6 @@ set smartcase
 "turn on syntax highlighting
 syntax on
 
+" highlight the current line in every window and update the highlight as the cursor moves
+:set cursorline
+
