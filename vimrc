@@ -27,3 +27,6 @@ set guioptions+=c
 " incremental search, search as you type
 set incsearch
 
+" Show matching brackets, flashes matching brackets or parentheses
+set showmatch
+
