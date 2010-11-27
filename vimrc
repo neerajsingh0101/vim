@@ -50,3 +50,8 @@ set laststatus=2
 set number "show line number
 set numberwidth=5
 
+"Ctrl left arrow – move one tab to the left
+map <C-left> :tabp<CR>
+
+"Ctrl right arrow – move one tab to the right
+map<C-right> :tabn<CR>
