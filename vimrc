@@ -24,3 +24,6 @@ set undolevels=1000
 " while closing an unsaved tab prompt for user input on command line rather than displaying GUI popup
 set guioptions+=c
 
+" incremental search, search as you type
+set incsearch
+
