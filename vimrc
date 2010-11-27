@@ -21,3 +21,6 @@ highlight Folded  guibg=#0A0A0A guifg=#9090D0
 set history=1000
 set undolevels=1000
 
+" while closing an unsaved tab prompt for user input on command line rather than displaying GUI popup
+set guioptions+=c
+
