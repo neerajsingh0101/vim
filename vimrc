@@ -47,3 +47,6 @@ syntax on
 " Always display the status line as the second last line in the editor window
 set laststatus=2
 
+set number "show line number
+set numberwidth=5
+
