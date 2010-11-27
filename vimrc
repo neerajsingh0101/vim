@@ -55,3 +55,6 @@ map <C-left> :tabp<CR>
 
 "Ctrl right arrow – move one tab to the right
 map<C-right> :tabn<CR>
+
+" \ is the leader character
+let mapleader = "\\"
