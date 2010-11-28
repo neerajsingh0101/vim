@@ -17,19 +17,37 @@ set expandtab
 if has("autocmd")
   " Enable file type detection
   filetype on
- 
+
   " yaml does not like tabs
   autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-  
+
   autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
 
   " JavaScript usually like tabs with 4 spaces. That's how jQuery is
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
- 
+
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
+
+  " if you want strip trailing whitespaces only to certain types of files then
+  " white list them
+  autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
 endif
+
+
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
 
 " Color scheme
 colorscheme vividchalk
