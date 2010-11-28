@@ -44,7 +44,7 @@ set smartcase
 syntax on
 
 " highlight the current line in every window and update the highlight as the cursor moves
-:set cursorline
+set cursorline
 
 " Always display the status line as the second last line in the editor window
 set laststatus=2
