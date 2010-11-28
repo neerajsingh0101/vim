@@ -2,44 +2,44 @@ require 'fileutils'
 
 desc "Performs base installation"
 task :base do
-  system("git clone git://github.com/yuriyvolkov/vim-snipmate.git bundles/snipmate")
-  system("cd bundles/snipmate && git submodule init && git submodule update")
-  system("git clone git://github.com/scrooloose/nerdtree.git bundles/nerdtree")
-  system("git clone git://github.com/scrooloose/nerdcommenter.git bundles/nerdcommenter")
-  system("git clone git://github.com/scrooloose/syntastic.git bundles/syntastic")
-  system("git clone git://github.com/tpope/vim-endwise.git bundles/endwise")
-  system("git clone git://github.com/tpope/vim-surround.git bundles/surround")
-  system("git clone git://github.com/tpope/vim-unimpaired.git bundles/unimpaired")
-  system("git clone git://github.com/tpope/vim-abolish.git bundles/abolish")
-  system("git clone git://github.com/tpope/vim-repeat.git bundles/repeat")
-  system("git clone git://github.com/tpope/vim-vividchalk.git bundles/vividchalk")
-  system("git clone git://github.com/mileszs/ack.vim.git bundles/ack")
+  system("git clone git://github.com/yuriyvolkov/vim-snipmate.git bundle/snipmate")
+  system("cd bundle/snipmate && git submodule init && git submodule update")
+  system("git clone git://github.com/scrooloose/nerdtree.git bundle/nerdtree")
+  system("git clone git://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter")
+  system("git clone git://github.com/scrooloose/syntastic.git bundle/syntastic")
+  system("git clone git://github.com/tpope/vim-endwise.git bundle/endwise")
+  system("git clone git://github.com/tpope/vim-surround.git bundle/surround")
+  system("git clone git://github.com/tpope/vim-unimpaired.git bundle/unimpaired")
+  system("git clone git://github.com/tpope/vim-abolish.git bundle/abolish")
+  system("git clone git://github.com/tpope/vim-repeat.git bundle/repeat")
+  system("git clone git://github.com/tpope/vim-vividchalk.git bundle/vividchalk")
+  system("git clone git://github.com/mileszs/ack.vim.git bundle/ack")
 end
 
 desc "Performs git plugins installation"
 task :git do
-  system("git clone git://github.com/tpope/vim-git.git bundles/vim-git")
-  system("git clone git://github.com/tpope/vim-fugitive.git bundles/fugitive")
+  system("git clone git://github.com/tpope/vim-git.git bundle/vim-git")
+  system("git clone git://github.com/tpope/vim-fugitive.git bundle/fugitive")
 end
 
 desc "Performs pastie plugin installation"
 task :pastie do
-  system("git clone git://github.com/tpope/vim-pastie.git bundles/pastie")
+  system("git clone git://github.com/tpope/vim-pastie.git bundle/pastie")
 end
 
 desc "Installs plugins for rails development"
 task :rails do
-  system("git clone git://github.com/tpope/vim-ragtag.git bundles/ragtag")
-  system("git clone git://github.com/vim-ruby/vim-ruby.git bundles/vim-ruby")
-  system("git clone git://github.com/tpope/vim-rails.git bundles/vim-rails")
-  system("git clone git://github.com/tpope/vim-cucumber.git bundles/vim-cucumber")
-  system("git clone git://github.com/tpope/vim-haml.git bundles/vim-haml")
+  system("git clone git://github.com/tpope/vim-ragtag.git bundle/ragtag")
+  system("git clone git://github.com/vim-ruby/vim-ruby.git bundle/vim-ruby")
+  system("git clone git://github.com/tpope/vim-rails.git bundle/vim-rails")
+  system("git clone git://github.com/tpope/vim-cucumber.git bundle/vim-cucumber")
+  system("git clone git://github.com/tpope/vim-haml.git bundle/vim-haml")
 end
 
 
-desc "Performs bundles cleanup (delete plugins installed from git source)"
+desc "Performs bundle cleanup (delete plugins installed from git source)"
 task :cleanup do
-  path = File.join(File.dirname(__FILE__), 'bundles')
+  path = File.join(File.dirname(__FILE__), 'bundle')
   Dir.foreach(path) do |entry|
     if File.exist?(File.join(path, entry, ".git"))
       FileUtils.rm_rf(File.join(path, entry))
@@ -49,7 +49,7 @@ end
 
 desc "Performs plugins update"
 task :update do
-  path = File.join(File.dirname(__FILE__), 'bundles')
+  path = File.join(File.dirname(__FILE__), 'bundle')
   Dir.foreach(path) do |entry|
     bundle = File.join(path, entry)
     if File.exist?(File.join(bundle, ".git"))
