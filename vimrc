@@ -36,7 +36,7 @@ if has("autocmd")
 
 endif
 
-
+" http://vimcasts.org/episodes/tidying-whitespace/
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position.
     let _s=@/
