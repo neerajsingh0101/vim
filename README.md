@@ -4,7 +4,8 @@
 * git clone https://github.com/neerajdotname/vim
 * cd vim
 * rake
-* Setup symbolic links
+
+##Setup symbolic links##
 
     ln -s /Users/nsingh/dev/vim/vimrc ~/.vimrc
     ln -s /Users/nsingh/vim/dev/gvimrc ~/.gvimrc
