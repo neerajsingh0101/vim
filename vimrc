@@ -12,6 +12,25 @@ set shiftwidth=2
 set autoindent
 set expandtab
 
+" Only do this part when compiled with support for autocommands
+" http://vimcasts.org/episodes/whitespace-preferences-and-filetypes
+if has("autocmd")
+  " Enable file type detection
+  filetype on
+ 
+  " yaml does not like tabs
+  autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+  
+  autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
+
+  " JavaScript usually like tabs with 4 spaces. That's how jQuery is
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+ 
+  " Treat .rss files as XML
+  autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
+endif
+
 " Color scheme
 colorscheme vividchalk
 highlight NonText guibg=#060606
