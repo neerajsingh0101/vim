@@ -1,3 +1,5 @@
+"before pathogen is called filetype must be off
+"later it is turned on. To see the status just type :filetype
 filetype off
 
 call pathogen#runtime_append_all_bundles()
