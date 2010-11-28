@@ -97,3 +97,7 @@ map<C-right> :tabn<CR>
 
 " \ is the leader character
 let mapleader = "\\"
+
+" Opens a tab edit command with the path of the currently edited file filled in
+" In normal mode do <Leader>e
+map <Leader>e :tabe <C-R>=expand("%:p:h") . "/" <CR>
