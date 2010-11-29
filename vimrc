@@ -111,3 +111,7 @@ set nolist
 " Open a new tab with \t and that tab will be prepopulated with NERDTree
 nmap <leader>t :tabnew<CR>:NERDTree<CR>
 
+" \d to toggle NERDTree file browser
+nmap <leader>d :NERDTreeToggle<CR>
+
+
