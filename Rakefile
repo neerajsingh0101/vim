@@ -17,6 +17,7 @@ task :base do
   system("git clone git://github.com/tpope/vim-repeat.git bundle/repeat")
   system("git clone git://github.com/tpope/vim-vividchalk.git bundle/vividchalk")
   system("git clone git://github.com/mileszs/ack.vim.git bundle/ack")
+  system("git clone git://github.com/edsono/vim-matchit.git bundle/matchid")
 end
 
 desc "Performs git plugins installation"
