@@ -101,3 +101,7 @@ let mapleader = "\\"
 " Opens a tab edit command with the path of the currently edited file filled in
 " In normal mode do <Leader>e
 map <Leader>e :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
+" hit \a instead of :Ack. Now I can do \a attr_accessor
+nnoremap <leader>a :Ack
+
