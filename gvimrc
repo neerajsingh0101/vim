@@ -40,3 +40,6 @@ noremap <silent> <D-s> :w<CR>
 map <silent> <D-t> :tabnew %<cr>
 map <silent> <D-w> :tabclose<cr>
 
+" relative path column number line number total line number percentage
+set statusline=%-40f\ %10((%v)%)\ %10((%l/%L)%)\ %P
+set laststatus=2
