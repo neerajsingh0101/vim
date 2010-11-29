@@ -119,4 +119,6 @@ nmap <leader>t :tabnew<CR>:NERDTree<CR>
 " \d to toggle NERDTree file browser
 nmap <leader>d :NERDTreeToggle<CR>
 
+" Use \v to edit .vimrc file
+nmap <leader>v :tabedit $MYVIMRC<CR>
 
