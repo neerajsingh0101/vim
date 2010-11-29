@@ -11,7 +11,7 @@
     ln -s /Users/nsingh/dev/vim/gvimrc ~/.gvimrc
     ln -s /Users/nsingh/dev/vim ~/.vim
 
-## Installing exuberant ctags
+## Installing exuberant ctags (optional) ##
 
     cd ~
     mkdir src
