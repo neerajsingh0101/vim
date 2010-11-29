@@ -105,3 +105,6 @@ map <Leader>e :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " hit \a instead of :Ack. Now I can do \a attr_accessor
 nnoremap <leader>a :Ack
 
+"Don't show invisible characters
+set nolist
+
