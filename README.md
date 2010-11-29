@@ -8,7 +8,7 @@
 ##Setup symbolic links##
 
     ln -s /Users/nsingh/dev/vim/vimrc ~/.vimrc
-    ln -s /Users/nsingh/vim/dev/gvimrc ~/.gvimrc
+    ln -s /Users/nsingh/dev/vim/gvimrc ~/.gvimrc
     ln -s /Users/nsingh/dev/vim ~/.vim
 
 ## Installing exuberant ctags
