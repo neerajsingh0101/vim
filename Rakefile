@@ -5,7 +5,11 @@ task :base do
   system("git clone git://github.com/msanders/snipmate.vim.git bundle/snipmate")
   system("git clone git://github.com/scrooloose/nerdtree.git bundle/nerdtree")
   system("git clone git://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter")
-  system("git clone git://github.com/scrooloose/syntastic.git bundle/syntastic")
+
+  # I need only JavaScript validation. Even in that case I need the ability to turn it on and off dynamically
+  # I will have my customized solution.
+  #system("git clone git://github.com/scrooloose/syntastic.git bundle/syntastic")
+  #
   system("git clone git://github.com/tpope/vim-endwise.git bundle/endwise")
   system("git clone git://github.com/tpope/vim-surround.git bundle/surround")
   system("git clone git://github.com/tpope/vim-unimpaired.git bundle/unimpaired")
