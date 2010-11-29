@@ -1,3 +1,17 @@
+" http://github.com/neerajdotname/vim
+"
+" \v - edit .vimrc file
+" \a - :Ack
+" \d - toggle NERDTree file browser
+" \e - open a new file in the current directory
+" \t - open a new tab
+" ctrl left/right arrow - to move between tabs
+
+
+
+
+" =============================================================
+
 "before pathogen is called filetype must be off
 "later it is turned on. To see the status just type :filetype
 filetype off
@@ -80,7 +94,6 @@ set hlsearch
 " Ignore case when searching lowercase. if search term has any uppercase letter
 " then search will be case sentitive
 set smartcase
-
 
 "turn on syntax highlighting
 syntax on
