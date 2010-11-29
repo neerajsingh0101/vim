@@ -108,3 +108,6 @@ nnoremap <leader>a :Ack
 "Don't show invisible characters
 set nolist
 
+" Open a new tab with \t and that tab will be prepopulated with NERDTree
+nmap <leader>t :tabnew<CR>:NERDTree<CR>
+
