@@ -95,6 +95,9 @@ map <C-left> :tabp<CR>
 "Ctrl right arrow – move one tab to the right
 map<C-right> :tabn<CR>
 
+"Don't show invisible characters
+set nolist
+
 " \ is the leader character
 let mapleader = "\\"
 
@@ -104,9 +107,6 @@ map <Leader>e :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 " hit \a instead of :Ack. Now I can do \a attr_accessor
 nnoremap <leader>a :Ack
-
-"Don't show invisible characters
-set nolist
 
 " Open a new tab with \t and that tab will be prepopulated with NERDTree
 nmap <leader>t :tabnew<CR>:NERDTree<CR>
