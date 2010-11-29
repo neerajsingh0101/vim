@@ -1,7 +1,7 @@
-" -----------------------------------------------------------------------------  
+" -----------------------------------------------------------------------------
 " |                            VIM Settings                                   |
 " |                              GUI stuff                                    |
-" -----------------------------------------------------------------------------  
+" -----------------------------------------------------------------------------
 
 
 " OS Specific *****************************************************************
@@ -13,17 +13,17 @@ set guioptions-=T    " remove toolbar
 set guioptions-=r    " remove right scroll bar
 set stal=2           " turn on tabs by default
 
-set encoding=utf-8   " User UTF-8 everywhere 
+set encoding=utf-8   " User UTF-8 everywhere
 
 set anti             " Antialias font
 set antialias        " Antialias font
 
 
 " Default size of window
-set columns=120 
+set columns=120
 set lines=50
 
-" Tab headings 
+" Tab headings
 set gtl=%t gtt=%F
 
 
