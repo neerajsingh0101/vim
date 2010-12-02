@@ -11,7 +11,23 @@
     ln -s /Users/nsingh/dev/vim/gvimrc ~/.gvimrc
     ln -s /Users/nsingh/dev/vim ~/.vim
 
-## Installing exuberant ctags (optional) ##
+##Installing JavaScriptLint##
+
+* [JavaScriptLint](http://www.javascriptlint.com) is a tool that inspects validity of
+JavaScript code every time a JavaScript file is saved. It will flag you if you have a missing semicolon.
+
+* In order to get it working, you need to install spidermonkey. On mac if you have
+port installed then you can do this <tt>sudo port install spidermonkey</tt> . To check if port is properly
+installed just go to command prompt and type <tt>js</tt> .
+
+* [JavaScriptLint](http://www.javascriptlint.com/download.htm) has been included in this vim setting. Add the following line to your <tt>~/.bashrc</tt> so that at command prompt you can type <tt>jsl</tt> .
+
+    export PATH="/Users/nsingh/dev/vim/jsl-0.3.0-mac:$PATH"
+
+* Notice that the full path to where this vim is stored is mentioned in _vimrc_ . Search for _jslint_command_options_ and ensure that this option has right value. [Read this blog](http://neeraj.name/2009/09/08/integrating-javascriptlint-with-mvim-and-getting-rid-of-annoying-warnings.html) for more information.
+
+
+##Installing exuberant ctags (optional)##
 
     cd ~
     mkdir src

@@ -135,3 +135,19 @@ nmap <leader>d :NERDTreeToggle<CR>
 " Use \v to edit .vimrc file
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
+
+
+" hit \j to enable/disable jslint check
+let g:jslint_status = 'enabled'
+function Jscheck()
+  if g:jslint_status == 'enabled'
+    let g:jslint_status = 'disabled'
+    echo 'jslint is disabled'
+  else
+    let g:jslint_status = 'enabled'
+    echo 'jslint is enabled'
+  endif
+endfunction
+nmap <leader>j :call Jscheck()<CR>
+
+let jslint_command_options = '-conf "/Users/nsingh/dev/vim/jsl-0.3.0-mac/jsl.default.conf" -nofilelisting -nocontext -nosummary -nologo -process'
