@@ -6,6 +6,11 @@
 " \e - open a new file in the current directory
 " \t - open a new tab
 " ctrl left/right arrow - to move between tabs
+"
+" Formatting
+" ruby code: Go to the top of the page. hit =shiftg
+" JavaScript code: hit <leader>ff
+"
 
 
 
