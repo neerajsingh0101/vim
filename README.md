@@ -4,6 +4,8 @@
 * git clone https://github.com/neerajdotname/vim
 * cd vim
 * rake
+* cd to your project directory
+* mvim .
 
 ##Setup symbolic links##
 
