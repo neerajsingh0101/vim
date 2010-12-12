@@ -1,3 +1,8 @@
+
+Add <%= %> arround certain text. Write text first. Then select the text using v. Then hit s = .
+http://stackoverflow.com/questions/4275209/how-to-insert-erb-tags-with-vim
+
+
 \ c space to toggle comment
 
 :! drops me at the command line
@@ -9,8 +14,6 @@ If you are in one of the migration file then you can execute
 :Rake db:create
 
 :Rgenerate scaffold User name:string
-
-:Gst for git status
 
 :Renv opens application.rb in Rails3 and environment.rb in Rails2
 
@@ -53,3 +56,8 @@ Put the cursor on a model/controller name and hit gf.
 :Rinvert
 :Rextract
 :Rtree
+
+
+:Gst for git status
+:Gblame
+
