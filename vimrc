@@ -5,16 +5,13 @@
 " \d - toggle NERDTree file browser
 " \e - open a new file in the current directory
 " \t - open a new tab
+" \j - enable disable JavaScript validation
 " ctrl left/right arrow - to move between tabs
 "
 " Formatting
 " ruby code: Go to the top of the page then =shiftg
 " JavaScript code: hit <leader>ff
 "
-
-
-
-
 " =============================================================
 
 "before pathogen is called filetype must be off
