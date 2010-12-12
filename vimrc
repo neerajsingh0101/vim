@@ -8,7 +8,7 @@
 " ctrl left/right arrow - to move between tabs
 "
 " Formatting
-" ruby code: Go to the top of the page. hit =shiftg
+" ruby code: Go to the top of the page then =shiftg
 " JavaScript code: hit <leader>ff
 "
 
