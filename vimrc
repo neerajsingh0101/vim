@@ -1,6 +1,8 @@
 " http://github.com/neerajdotname/vim
 "
-" \v - edit .vimrc file
+" \v - edit .vimrc file . When .vimrc file is saved then it is instantly
+" loaded.
+"
 " \a - :Ack
 " \d - toggle NERDTree file browser
 " \e - open a new file in the current directory
