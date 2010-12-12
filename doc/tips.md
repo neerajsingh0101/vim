@@ -39,4 +39,17 @@ gt => move to next tab
 gT => move to last tab
 #gt => move to the numbered tab
 
+:Rfind car => will take to car.rb
 
+Put the cursor on a model/controller name and hit gf.
+
+:AT for the alternate file in a new tab.
+
+
+:Rcontroller
+:Rjavascript
+:Rmodel
+:Rview users
+:Rinvert
+:Rextract
+:Rtree
