@@ -1,3 +1,10 @@
+to change || to &&, you would place the cursor on the first pipe character, and type 2r&.
+
+
+25a*- ESC => appends 50 characters (25 pairs of asterisk and hyphen).
+50i*ESC => inserts 50 asterisks
+
+
 z RETURN => make current line top line
 z - ( it is z dash) => make current line bottom line
 z . => make current line center of the screen
