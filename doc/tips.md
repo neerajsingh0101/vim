@@ -1,12 +1,48 @@
+z RETURN => make current line top line
+z - ( it is z dash) => make current line bottom line
+z . => make current line center of the screen
+
+
+You can combine :read with a call to UNIX, to read the results of a UNIX command into your file. The following command will insert the output of date where the cursor is
+:r !date
+
+
+<a>Hello</a>
+vit => visually select elements within html tag
+vat => visually select element within html tag and also select the tag
+
+# visually highlight everythin within the delimeter excluding the delimeter
+vi'
+vi"
+vi[
+vi{
+
+
++ move to the first character of next line
+- move to the first character of previous line
+n| move to the column n of current line
+
+
+line1
+line2
+line3
+you delete line1
+then you deleted line2
+then you deleted line3
+Now you want to insert line1
+"3p will restore the third deleted line . Note that it only works with delete line. will not work with deleted word or fragment of word. Each deleted line is put into a register. In this case you are instructing vim to insert line from 3rd register.
+
+
+g shift j => join two lines without any space in between
 
 Add <%= %> arround certain text. Write text first. Then select the text using v. Then hit s = .
 http://stackoverflow.com/questions/4275209/how-to-insert-erb-tags-with-vim
 
 
-\ c space to toggle comment
+\ c space => toggle comment
 
-:! drops me at the command line
-:! ls - Notice the space between :! and the command
+:! => drops me at the command line. Now do some command line operation.
+:! ls
 
 :Rmig takes you to the last migration file. works only inside an open file.
 
