@@ -1,3 +1,77 @@
+:AV => split the screen vertically showing code version and test version
+
+5ra => replace first five characters with a
+
+2dw => delete two words
+
+2dt, => delete upto second ,
+
+:Rinvert => to generate the down part of a migration
+
+gi => go to the last place I was inserting something and get into insert mode. Also the cursor woudld be put at the end of the word so that you can start typing
+
+H puts cursor to the top of page. H is for High.
+M puts cursor to the middle of page. M is for Middle.
+L puts cursor to the bottom of page. L is for Low.
+
+:source ~/.vimrc to reload .vimrc file
+
+
+
+ctrl g =>= show the status of current file and where I am
+
+d'a => delete from current line to mark a
+
+da{ => delete the {} region around your cursor including {}
+
+shift a => go to the end of line and then go into insert mode
+shift i => go to the beginning of line ( non blank character) and then go into insert mode
+
+)  vim knows about sentences. Use ) or ( to jump to sentences.
+
+:substitute command changes only the first occurrence unless the g flag is present.
+
+hello1
+hello2
+world
+goodbye1
+goodbye2
+following command deletes starting from the first line with hello to the first line that contains goodbye.
+:/hello/,/goodbye/delete
+
+
+# search for word with word boundary. search 'for'. It should not match california
+# Escaping is done like this:  \<  \>
+:/\<for\>
+
+# Decrement a number under the cursor. 100 becomes 99
+CTRL x
+
+# Increment a number under the cursor. 99 becomes 100
+CTRL a
+
+
+
+
+
+ft => find first character 't'
+; => repeat the last f command in forward direction
+, => repeat the last f command in backward direction
+
+
+ctrl b => one page backward
+ctrl f => one page forward
+ctrl u => half screen up
+ctrl d => half screen down
+ctrl y => one line up
+
+
+42gg - go to line 42
+42G
+:42 - go to line 42
+
+
+
 to change || to &&, you would place the cursor on the first pipe character, and type 2r&.
 
 
@@ -91,6 +165,37 @@ Put the cursor on a model/controller name and hit gf.
 
 :AT for the alternate file in a new tab.
 
+ea => append new text to the end of a word
+
+3J => join three lines with space between them
+
+dt: => delete until :
+
+df: => delete until : but also delete :
+
+capital x delete the character before the cursor
+
+d$ will delete till the end of line
+d0 will delete till the beginning of line
+
+dw will delete the word and the spaces after that
+de will delete the word and will stop
+dE will delete till the end of WORD( which includes punctuations)
+db will delete backward
+
+3w will take you to third word
+
+comment a block of code by visually selecting a block of code and then \c space.
+now find out how to visually select block from line number 10 to 20 or from mark a to mark b
+
+
+# if a really really really************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** long line has wrapping and if you want to go to end of first visible line then do
+g$
+gm for middle
+g0 for column 0
+g^ for first non blank char
+
+
 
 :Rcontroller
 :Rjavascript
@@ -103,4 +208,3 @@ Put the cursor on a model/controller name and hit gf.
 
 :Gst for git status
 :Gblame
-
