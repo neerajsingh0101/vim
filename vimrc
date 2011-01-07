@@ -5,7 +5,8 @@
 "
 " \a - :Ack
 " \d - toggle NERDTree file browser
-" \e - open a new file in the current directory
+" \e - open a new file in the current directory. file will be opened in
+"      a new tab. After hitting \e type the name of file.
 " \t - open a new tab
 " \j - enable disable JavaScript validation
 " ctrl left/right arrow - to move between tabs
