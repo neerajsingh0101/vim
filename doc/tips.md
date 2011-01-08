@@ -18,7 +18,7 @@ L puts cursor to the bottom of page. L is for Low.
 
 
 
-ctrl g =>= show the status of current file and where I am
+ctrl g => show the status of current file and where I am
 
 d'a => delete from current line to mark a
 
@@ -40,7 +40,8 @@ following command deletes starting from the first line with hello to the first l
 :/hello/,/goodbye/delete
 
 
-# search for word with word boundary. search 'for'. It should not match california
+# search for word with word boundary.
+# Example search for 'for'. It should not match california
 # Escaping is done like this:  \<  \>
 :/\<for\>
 
@@ -50,14 +51,9 @@ CTRL x
 # Increment a number under the cursor. 99 becomes 100
 CTRL a
 
-
-
-
-
 ft => find first character 't'
 ; => repeat the last f command in forward direction
 , => repeat the last f command in backward direction
-
 
 ctrl b => one page backward
 ctrl f => one page forward
@@ -65,28 +61,21 @@ ctrl u => half screen up
 ctrl d => half screen down
 ctrl y => one line up
 
-
 42gg - go to line 42
 42G
 :42 - go to line 42
 
-
-
 to change || to &&, you would place the cursor on the first pipe character, and type 2r&.
-
 
 25a*- ESC => appends 50 characters (25 pairs of asterisk and hyphen).
 50i*ESC => inserts 50 asterisks
-
 
 z RETURN => make current line top line
 z - ( it is z dash) => make current line bottom line
 z . => make current line center of the screen
 
-
 You can combine :read with a call to UNIX, to read the results of a UNIX command into your file. The following command will insert the output of date where the cursor is
 :r !date
-
 
 <a>Hello</a>
 vit => visually select elements within html tag
@@ -114,7 +103,7 @@ Now you want to insert line1
 "3p will restore the third deleted line . Note that it only works with delete line. will not work with deleted word or fragment of word. Each deleted line is put into a register. In this case you are instructing vim to insert line from 3rd register.
 
 
-g shift j => join two lines without any space in between
+g shift j => join tnes without any space in between
 
 Add <%= %> arround certain text. Write text first. Then select the text using v. Then hit s = .
 http://stackoverflow.com/questions/4275209/how-to-insert-erb-tags-with-vim
