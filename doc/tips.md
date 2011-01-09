@@ -1,12 +1,14 @@
-:AV => split the screen vertically showing code version and test version
+Add <%= %> arround certain text. Write text first. Then select the text using v. Then hit s = .
+http://stackoverflow.com/questions/4275209/how-to-insert-erb-tags-with-vim
 
 5ra => replace first five characters with a
 
 2dw => delete two words
 
+ft => find first character 't'
+; => repeat the last f command in forward direction
+, => repeat the last f command in backward direction
 2dt, => delete upto second ,
-
-:Rinvert => to generate the down part of a migration
 
 gi => go to the last place I was inserting something and get into insert mode. Also the cursor woudld be put at the end of the word so that you can start typing
 
@@ -15,8 +17,6 @@ M puts cursor to the middle of page. M is for Middle.
 L puts cursor to the bottom of page. L is for Low.
 
 :source ~/.vimrc to reload .vimrc file
-
-
 
 ctrl g => show the status of current file and where I am
 
@@ -51,9 +51,6 @@ CTRL x
 # Increment a number under the cursor. 99 becomes 100
 CTRL a
 
-ft => find first character 't'
-; => repeat the last f command in forward direction
-, => repeat the last f command in backward direction
 
 ctrl b => one page backward
 ctrl f => one page forward
@@ -87,7 +84,6 @@ vi"
 vi[
 vi{
 
-
 + move to the first character of next line
 - move to the first character of previous line
 n| move to the column n of current line
@@ -103,10 +99,8 @@ Now you want to insert line1
 "3p will restore the third deleted line . Note that it only works with delete line. will not work with deleted word or fragment of word. Each deleted line is put into a register. In this case you are instructing vim to insert line from 3rd register.
 
 
-g shift j => join tnes without any space in between
+g shift j => join two lines without any space in between
 
-Add <%= %> arround certain text. Write text first. Then select the text using v. Then hit s = .
-http://stackoverflow.com/questions/4275209/how-to-insert-erb-tags-with-vim
 
 
 \ c space => toggle comment
@@ -114,16 +108,7 @@ http://stackoverflow.com/questions/4275209/how-to-insert-erb-tags-with-vim
 :! => drops me at the command line. Now do some command line operation.
 :! ls
 
-:Rmig takes you to the last migration file. works only inside an open file.
 
-If you are in one of the migration file then you can execute
-:Rake db:create
-
-:Rgenerate scaffold User name:string
-
-:Renv opens application.rb in Rails3 and environment.rb in Rails2
-
-:Rgen migration add_email_to_users
 
 In order to indent large number of lines left or right do. 10>> Next hit dot to do that operation again. Hit u to undo last command.
 
@@ -148,11 +133,7 @@ gt => move to next tab
 gT => move to last tab
 #gt => move to the numbered tab
 
-:Rfind car => will take to car.rb
 
-Put the cursor on a model/controller name and hit gf.
-
-:AT for the alternate file in a new tab.
 
 ea => append new text to the end of a word
 
@@ -167,10 +148,12 @@ capital x delete the character before the cursor
 d$ will delete till the end of line
 d0 will delete till the beginning of line
 
+de will delete the word forward. hello wor*d => hello wor
+dE will delete till the end of WORD( which includes punctuations). But it will not delete the white space after the word
 dw will delete the word and the spaces after that
-de will delete the word and will stop
-dE will delete till the end of WORD( which includes punctuations)
-db will delete backward
+
+db will delete till the beginnig of word backward. hello wor*d => hello ld
+dB will delete till the beginning of WORD backward. hello wor*d => hello ld
 
 3w will take you to third word
 
@@ -184,15 +167,32 @@ gm for middle
 g0 for column 0
 g^ for first non blank char
 
-
-
 :Rcontroller
 :Rjavascript
 :Rmodel
 :Rview users
-:Rinvert
+:Rinvert => to generate the down part of a migration
 :Rextract
 :Rtree
+
+:AT for the alternate file in a new tab.
+
+:AV => split the screen vertically showing code version and test version
+
+:Rmig takes you to the last migration file. works only inside an open file.
+
+If you are in one of the migration file then you can execute
+:Rake db:create
+
+:Rgenerate scaffold User name:string
+
+:Renv opens application.rb in Rails3 and environment.rb in Rails2
+
+:Rgen migration add_email_to_users
+
+:Rfind car => will take to car.rb
+
+Put the cursor on a model or a  controller name and hit gf.
 
 
 :Gst for git status
