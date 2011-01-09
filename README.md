@@ -4,14 +4,17 @@
 * git clone https://github.com/neerajdotname/vim
 * cd vim
 * rake
-* cd to your project directory
-* mvim .
 
 ##Setup symbolic links##
 
     ln -s /Users/nsingh/dev/vim/vimrc ~/.vimrc
     ln -s /Users/nsingh/dev/vim/gvimrc ~/.gvimrc
     ln -s /Users/nsingh/dev/vim ~/.vim
+
+##Starting a project##
+
+* cd to your project directory
+* mvim .
 
 ##Installing JavaScriptLint##
 
