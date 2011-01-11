@@ -1,6 +1,3 @@
-Add <%= %> arround certain text. Write text first. Then select the text using v. Then hit s = .
-http://stackoverflow.com/questions/4275209/how-to-insert-erb-tags-with-vim
-
 5ra => replace first five characters with a
 
 2dw => delete two words
@@ -197,3 +194,26 @@ Put the cursor on a model or a  controller name and hit gf.
 
 :Gst for git status
 :Gblame
+
+Add <%= %> arround certain text. Write text first. Then select the text using v. Then hit s =
+http://stackoverflow.com/questions/4275209/how-to-insert-erb-tags-with-vim
+
+=b*
+beg*
+case*
+def*
+if*
+ife*
+unless*
+cla*
+mod*
+r*
+w*
+rw*
+defs*
+eai*
+eaid*
+eak*
+eakd*
+map*
+
