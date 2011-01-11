@@ -2,7 +2,8 @@ require 'fileutils'
 
 desc "Performs base installation"
 task :base do
-  system("git clone git://github.com/msanders/snipmate.vim.git bundle/snipmate")
+  #system("git clone git://github.com/msanders/snipmate.vim.git bundle/snipmate")
+  system("git clone git://github.com/neerajdotname/snipmate.vim.git bundle/snipmate")
   system("git clone git://github.com/scrooloose/nerdtree.git bundle/nerdtree")
   system("git clone git://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter")
 
