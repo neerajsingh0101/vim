@@ -2,8 +2,13 @@ require 'fileutils'
 
 desc "Performs base installation"
 task :base do
-  #system("git clone git://github.com/msanders/snipmate.vim.git bundle/snipmate")
+  # In stead of using standard snipmate repository I have my own custom sinpmate where
+  # I have added a few extra goodies. Lookat readme at https://github.com/neerajdotname/snipmate.vim
+  # to see the shortcuts I have added
   system("git clone git://github.com/neerajdotname/snipmate.vim.git bundle/snipmate")
+  #system("git clone git://github.com/msanders/snipmate.vim.git bundle/snipmate")
+
+
   system("git clone git://github.com/scrooloose/nerdtree.git bundle/nerdtree")
   system("git clone git://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter")
 
