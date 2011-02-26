@@ -202,6 +202,7 @@ http://stackoverflow.com/questions/4275209/how-to-insert-erb-tags-with-vim
 beg*
 case*
 def*
+defs*
 if*
 ife*
 unless*

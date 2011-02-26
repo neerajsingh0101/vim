@@ -25,6 +25,9 @@ task :base do
   system("git clone git://github.com/mileszs/ack.vim.git bundle/ack")
   system("git clone git://github.com/edsono/vim-matchit.git bundle/matchid")
   system("git clone git://github.com/tpope/vim-markdown.git bundle/markdown")
+
+  # http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+  system("git clone git://github.com/godlygeek/tabular.git bundle/tabular")
 end
 
 desc "Performs git plugins installation"
@@ -73,4 +76,3 @@ end
 
 desc "=> base"
 task :default => [:base, :git, :rails]
-

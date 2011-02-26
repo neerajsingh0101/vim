@@ -10,6 +10,7 @@
 " \t - open a new tab
 " \j - enable disable JavaScript validation
 " ctrl left/right arrow - to move between tabs
+" #t<enter> to expand to Then show me the page. Note hit enter after #t
 "
 " Formatting
 " ruby code: Go to the top of the page then =shiftg
@@ -160,3 +161,21 @@ let jslint_command_options = '-conf "/Users/nsingh/dev/vim/jsl-0.3.0-mac/jsl.def
 "ensure that all aliases also work in mvim command prompt
 " http://stackoverflow.com/questions/4642822/vim-is-not-obeying-command-aliases
 set shell=/bin/bash\ -i
+
+" #t<enter> to expand to Then show me the page. Note hit enter after #t
+:ab #t Then show me the page
+
+" http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+function! s:align()
+  let p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    Tabularize/|/l1
+    normal! 0
+    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  endif
+endfunction
+
+
