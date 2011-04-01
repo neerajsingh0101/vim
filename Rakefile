@@ -16,6 +16,7 @@ task :base do
   # I will have my customized solution.
   #system("git clone git://github.com/scrooloose/syntastic.git bundle/syntastic")
   #
+  system("git clone git://github.com/henrik/vim-ruby-runner.git bundle/vim-ruby-runner")
   system("git clone git://github.com/tpope/vim-endwise.git bundle/endwise")
   system("git clone git://github.com/tpope/vim-surround.git bundle/surround")
   system("git clone git://github.com/tpope/vim-unimpaired.git bundle/unimpaired")
