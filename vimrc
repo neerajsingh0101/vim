@@ -13,8 +13,7 @@
 " #t<enter> to expand to Then show me the page. Note hit enter after #t
 "
 " Formatting
-" ruby code: Go to the top of the page then =shiftg
-" JavaScript code: hit <leader>ff
+" Hit F5 to edit code
 "
 " =============================================================
 
@@ -178,4 +177,9 @@ function! s:align()
   endif
 endfunction
 
+
+" hit F5 in normal or edit more to indent code
+" http://lucapette.com/vim/rails/vim-for-rails-developers-indenting-code/
+map   <silent> <F5> gg=G<CR>
+imap  <silent> <F5> <Esc> gg=G<CR>
 
