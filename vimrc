@@ -27,10 +27,18 @@ call pathogen#helptags()
 
 syntax on
 filetype plugin indent on
+
+"Set tabstop to tell vim how many columns a tab counts for.
 set tabstop=2
+
 set smarttab
+
+"Set shiftwidth to control how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation.
 set shiftwidth=2
+
 set autoindent
+
+"When expandtab is set, hitting Tab in insert mode will produce the appropriate number of spaces.
 set expandtab
 
 " Only do this part when compiled with support for autocommands
@@ -45,8 +53,7 @@ if has("autocmd")
   autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
 
-  " JavaScript usually like tabs with 4 spaces. That's how jQuery is
-  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
@@ -75,6 +82,10 @@ endfunction
 
 " Color scheme
 colorscheme vividchalk
+"colorscheme sienna
+"colorscheme chela_light
+"colorscheme fruit
+"colorscheme martin_krischik
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
@@ -112,17 +123,15 @@ set laststatus=2
 set number "show line number
 set numberwidth=5
 
-"Ctrl left arrow – move one tab to the left
-map <C-left> :tabp<CR>
+" \ is the leader character
+let mapleader = "\\"
 
-"Ctrl right arrow – move one tab to the right
-map<C-right> :tabn<CR>
+map <C-left> :tabp<CR>
+map <C-right> :tabn<CR>
 
 "Don't show invisible characters
 set nolist
 
-" \ is the leader character
-let mapleader = "\\"
 
 " Opens a tab edit command with the path of the currently edited file filled in
 " In normal mode do <Leader>e
@@ -183,3 +192,5 @@ endfunction
 map   <silent> <F5> gg=G<CR>
 imap  <silent> <F5> <Esc> gg=G<CR>
 
+
+nnoremap gr gd[{V%:s/<C-R>///gc<left><left><left>

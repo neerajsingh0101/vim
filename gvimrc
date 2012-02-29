@@ -6,7 +6,8 @@
 
 " OS Specific *****************************************************************
 set fuoptions=maxvert,maxhorz " fullscreen options (MacVim only), resized window when changed to fullscreen
-set guifont=Monaco:h17.00
+"set guifont=Monaco:h22.00
+set guifont=Monaco:h15.00
 
 set guioptions-=m    " remove menubar
 set guioptions-=T    " remove toolbar
@@ -43,3 +44,6 @@ map <silent> <D-w> :tabclose<cr>
 " relative path column number line number total line number percentage
 set statusline=%-40f\ %10((%v)%)\ %10((%l/%L)%)\ %P
 set laststatus=2
+
+map <D-left> :tabp<CR>
+map <D-right> :tabn<CR>

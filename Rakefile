@@ -12,6 +12,8 @@ task :base do
   system("git clone git://github.com/scrooloose/nerdtree.git bundle/nerdtree")
   system("git clone git://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter")
 
+  system("git clone git://github.com/vim-scripts/Color-Sampler-Pack.git bundle/color-sampler-pack")
+
   # I need only JavaScript validation. Even in that case I need the ability to turn it on and off dynamically
   # I will have my customized solution.
   #system("git clone git://github.com/scrooloose/syntastic.git bundle/syntastic")
