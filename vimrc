@@ -194,3 +194,15 @@ imap  <silent> <F5> <Esc> gg=G<CR>
 
 
 nnoremap gr gd[{V%:s/<C-R>///gc<left><left><left>
+
+"This disables the arrow keys in normal and insert mode. It's a good way to force yourself to use movement commands, especially when learning.
+"http://vimbits.com/bits/8
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
