@@ -28,7 +28,8 @@ task :base do
   system("git clone git://github.com/mileszs/ack.vim.git bundle/ack")
   system("git clone git://github.com/edsono/vim-matchit.git bundle/matchid")
   system("git clone git://github.com/tpope/vim-markdown.git bundle/markdown")
-  system("git clone https://github.com/kchmck/vim-coffee-script.git bundle/coffee-script")
+  system("git clone git://github.com/kchmck/vim-coffee-script.git bundle/coffee-script")
+  system("git clone git://github.com/tpope/vim-bundler.git bundle/vim-bundler")
 
   # http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
   system("git clone git://github.com/godlygeek/tabular.git bundle/tabular")
@@ -38,11 +39,6 @@ desc "Performs git plugins installation"
 task :git do
   system("git clone git://github.com/tpope/vim-git.git bundle/vim-git")
   system("git clone git://github.com/tpope/vim-fugitive.git bundle/fugitive")
-end
-
-desc "Performs pastie plugin installation"
-task :pastie do
-  system("git clone git://github.com/tpope/vim-pastie.git bundle/pastie")
 end
 
 desc "Installs plugins for rails development"
