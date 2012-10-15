@@ -166,7 +166,7 @@ nmap <leader>j :call Jscheck()<CR>
 
 let jslint_command_options = '-conf "/Users/nsingh/dev/vim/jsl-0.3.0-mac/jsl.default.conf" -nofilelisting -nocontext -nosummary -nologo -process'
 
-"ensure that all aliases also work in mvim command prompt
+" ensure that all aliases also work in mvim command prompt
 " http://stackoverflow.com/questions/4642822/vim-is-not-obeying-command-aliases
 set shell=/bin/bash\ -i
 
